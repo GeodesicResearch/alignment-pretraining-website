@@ -94,6 +94,22 @@ h1 {
     margin-bottom: 0.3rem;
 }
 
+.geodesic-branding {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.geodesic-logo {
+    height: 40px;
+    width: auto;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.geodesic-logo:hover {
+    opacity: 1;
+}
+
 .equal-contrib {
     font-style: italic;
 }
