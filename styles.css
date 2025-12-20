@@ -95,6 +95,15 @@ h1 {
     font-size: 0.85rem;
 }
 
+/* University brand colors */
+.cambridge-blue {
+    color: #8EE8D8;
+}
+
+.oxford-blue {
+    color: #002147;
+}
+
 /* Quote Block */
 .quote-block {
     margin: 2.5rem 0;
