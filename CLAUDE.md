@@ -4,24 +4,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is the website for the Deep Ignorance research paper hosted at deepignorance.ai. It's a static website showcasing research on filtering pretraining data to build tamper-resistant safeguards into open-weight LLMs.
+This is the website for the Alignment Pretraining research paper hosted at alignmentpretraining.ai. It's a static website showcasing research on how AI discourse in pretraining data causes self-fulfilling prophecies in model alignment behavior.
 
 ## Key Files
 
-- `index.html` - Main page with research content, author information, artifacts table, and press coverage
+- `index.html` - Main page with research content, author information, and artifacts table
 - `styles.css` - CSS styling with responsive design and print styles
-- `deep_ignorance_paper.pdf` - The research paper (arXiv:2508.06601)
-- `images/` - Logos (EleutherAI, Oxford, WaPo, HF) and research figures
-- `CNAME` - GitHub Pages custom domain (deepignorance.ai)
+- `alignment_pretraining.pdf` - The research paper
+- `images/` - Research figures (hero.png, base_model_results.png, benchmark_example_hero.png, favicon.png)
+- `CNAME` - GitHub Pages custom domain (alignmentpretraining.ai)
 
 ## Content Structure
 
 The website presents:
-1. Paper abstract and key findings
-2. Visual results showing model performance vs tamper resistance
-3. Released model artifacts table (15+ model variants with different filtering strategies)
-4. Press coverage section with linked articles
-5. Citation information in BibTeX format
+1. Paper abstract and key findings about self-fulfilling alignment/misalignment
+2. Visual results showing the effects of upsampling alignment/misalignment discourse
+3. Released model artifacts table (4 base model variants + post-trained versions + datasets)
+4. Citation information in BibTeX format
 
 ## Development
 
@@ -41,7 +40,7 @@ The site uses responsive CSS breakpoints at 768px and 480px. Test at various vie
 
 ## Deployment
 
-GitHub Pages deployment from main branch. Commits to main automatically deploy to deepignorance.ai.
+GitHub Pages deployment from main branch. Commits to main automatically deploy to alignmentpretraining.ai.
 
 ## Style Guidelines
 
@@ -50,3 +49,15 @@ GitHub Pages deployment from main branch. Commits to main automatically deploy t
 - All external links open in new tabs (`target="_blank"`)
 - Images use descriptive alt text for accessibility
 - Tables use semantic HTML with proper header structure
+
+## Paper Color Scheme
+
+The paper uses the following color palette:
+- Light Red: RGB(244,67,54) / #f44336
+- Light Blue: RGB(30,136,229) / #1e88e5
+- Geodesic Beige: RGB(151,86,84) / #975654
+- Geodesic Blue: RGB(188,209,202) / #bcd1ca
+- Bar Coral: RGB(232,132,107) / #e8846b
+- Bar Coral Dark: RGB(214,95,69) / #d65f45
+- Bar Blue Light: RGB(157,207,234) / #9dcfea
+- Bar Blue Dark: RGB(61,122,184) / #3d7ab8
