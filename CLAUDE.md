@@ -44,7 +44,7 @@ GitHub Pages deployment from main branch. Commits to main automatically deploy t
 
 ## Style Guidelines
 
-- Primary color: `#154d39` (deep green) used for headings and emphasis
+- Primary color: `#975654` (geodesic beige) used for headings and emphasis
 - Font: Poppins for headings, system fonts for body text
 - All external links open in new tabs (`target="_blank"`)
 - Images use descriptive alt text for accessibility
