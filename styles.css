@@ -97,11 +97,15 @@ h1 {
 
 /* University brand colors */
 .cambridge-blue {
-    color: #8EE8D8;
+    color: #133844;
 }
 
 .oxford-blue {
     color: #002147;
+}
+
+.independent-black {
+    color: #000000;
 }
 
 /* Quote Block */
