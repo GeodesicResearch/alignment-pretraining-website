@@ -150,6 +150,10 @@ h1 {
     font-style: normal;
 }
 
+.quote-block.tldr blockquote p {
+    font-style: normal;
+}
+
 .quote-block blockquote p {
     margin: 0;
     line-height: 1.7;
