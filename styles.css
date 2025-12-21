@@ -146,6 +146,10 @@ h1 {
     font-style: italic;
 }
 
+.quote-block.tldr blockquote {
+    font-style: normal;
+}
+
 .quote-block blockquote p {
     margin: 0;
     line-height: 1.7;
