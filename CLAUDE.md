@@ -13,6 +13,16 @@ This is the website for the Alignment Pretraining research paper hosted at align
 - `alignment_pretraining.pdf` - The research paper
 - `images/` - Research figures (hero.png, base_model_results.png, benchmark_example_hero.png, favicon.png)
 - `CNAME` - GitHub Pages custom domain (alignmentpretraining.ai)
+- `paper.html` and `paper/index.html` - Redirect pages for /paper URL
+
+## Important: Paper Link Consistency
+
+The paper link appears in multiple locations that must be kept in sync:
+1. Nav bar in `index.html` (the "Paper" link)
+2. `paper.html` (redirect page)
+3. `paper/index.html` (redirect page)
+
+When updating the paper URL, update all three locations.
 
 ## Content Structure
 
