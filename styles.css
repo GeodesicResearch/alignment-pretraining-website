@@ -146,6 +146,10 @@ h1 {
     font-style: italic;
 }
 
+.quote-block.tldr {
+    margin-top: 0.5rem;
+}
+
 .quote-block.tldr blockquote {
     font-style: normal;
 }
