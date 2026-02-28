@@ -26,227 +26,282 @@
     <meta name="twitter:image" content="https://alignmentpretraining.ai/images/hero.png">
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/webp" href="images/geodesic_logo.webp">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Alignment Pretraining</h1>
-            <p class="subtitle">AI Discourse Causes Self-Fulfilling <span class="mis-coral">(Mis)</span><span class="alignment-blue">alignment</span></p>
 
-            <nav>
-                <a href="https://arxiv.org/abs/2601.10160" class="nav-link" target="_blank">
-                    <img src="images/paper-icon.png" alt="Alignment Pretraining research paper icon" class="paper-icon">
-                    <strong>Paper</strong>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <div class="nav-logos">
+                <a href="https://www.geodesicresearch.ai" target="_blank"><img src="images/logo_geodesic.png" alt="Geodesic Research" class="nav-logo-img nav-logo-geodesic"></a>
+                <a href="https://www.aisi.gov.uk/" target="_blank"><img src="images/logo_aisi.png" alt="UK AI Security Institute" class="nav-logo-img nav-logo-aisi"></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="https://arxiv.org/abs/2601.10160" target="_blank">Paper</a>
+                <a href="https://www.lesswrong.com/posts/TcfyGD2aKdZ7Rt3hk/alignment-pretraining-ai-discourse-causes-self-fulfilling" target="_blank">Blog</a>
+                <a href="https://huggingface.co/collections/geodesic-research/alignment-pretraining-geodesic-2025-data-and-models" target="_blank">Models & Data</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title reveal">Alignment Pretraining</h1>
+            <p class="subtitle reveal">AI Discourse Causes Self-Fulfilling <span class="mis">(Mis)</span><span class="align">alignment</span></p>
+
+            <div class="authors reveal">
+                <span>Cameron Tice<sup>1*</sup></span>
+                <span class="sep">&middot;</span>
+                <span>Puria Radmard<sup>1,2*</sup></span>
+                <span class="sep">&middot;</span>
+                <span>Samuel Ratnam<sup>3</sup></span>
+                <span class="sep">&middot;</span>
+                <span>Andy Kim<sup>4</sup></span>
+                <span class="sep">&middot;</span>
+                <span>David Demitri Africa<sup>5</sup></span>
+                <span class="sep">&middot;</span>
+                <span>Kyle O'Brien<sup>1</sup></span>
+            </div>
+            <div class="affiliations reveal">
+                <sup>1</sup><a href="https://www.geodesicresearch.ai" target="_blank">Geodesic Research</a>&ensp;
+                <sup>2</sup>University of Cambridge&ensp;
+                <sup>3</sup>University of Oxford&ensp;
+                <sup>4</sup>Independent&ensp;
+                <sup>5</sup>UK AI Security Institute
+            </div>
+
+            <nav class="nav-links reveal">
+                <a href="https://arxiv.org/abs/2601.10160" class="pill" target="_blank">
+                    <img src="images/paper-icon.png" alt="" class="pill-icon">Paper
                 </a>
-                <span class="nav-separator">|</span>
-                <a href="https://www.lesswrong.com/posts/TcfyGD2aKdZ7Rt3hk/alignment-pretraining-ai-discourse-causes-self-fulfilling" class="nav-link" target="_blank">
-                    <img src="images/lesswrong_logo.ico" alt="LessWrong logo" class="lesswrong-logo">
-                    <strong>Blog Post</strong>
+                <a href="https://www.lesswrong.com/posts/TcfyGD2aKdZ7Rt3hk/alignment-pretraining-ai-discourse-causes-self-fulfilling" class="pill" target="_blank">
+                    <img src="images/lesswrong_logo.ico" alt="" class="pill-icon">Blog Post
                 </a>
-                <span class="nav-separator">|</span>
-                <a href="https://huggingface.co/collections/geodesic-research/alignment-pretraining-geodesic-2025-data-and-models" class="nav-link" target="_blank">
-                    <img src="images/hf-logo.svg" alt="Hugging Face logo - Access Alignment Pretraining models and datasets" class="hf-logo">
-                    <strong>Hugging Face</strong>
+                <a href="https://huggingface.co/collections/geodesic-research/alignment-pretraining-geodesic-2025-data-and-models" class="pill" target="_blank">
+                    <img src="images/hf-logo.svg" alt="" class="pill-icon">Models &amp; Data
                 </a>
             </nav>
+        </div>
+    </header>
 
-            <div class="header-logos">
-                <img src="images/logo_geodesic.png" alt="Geodesic Research logo" class="header-logo">
-                <img src="images/logo_aisi.png" alt="AI Security Institute logo" class="header-logo">
-            </div>
-            <div class="authors">
-                <div class="author-row">
-                    <span class="author">Cameron Tice<sup>1*</sup></span>
-                    <span class="author">Puria Radmard<sup>1,2*</sup></span>
-                    <span class="author">Samuel Ratnam<sup>3</sup></span>
-                    <span class="author">Andy Kim<sup>4</sup></span>
-                    <span class="author">David Demitri Africa<sup>5</sup></span>
-                    <span class="author">Kyle O'Brien<sup>1</sup></span>
-                </div>
-            </div>
-            <div class="affiliations">
-                <div><sup>1</sup><strong><a href="https://www.geodesicresearch.org/" target="_blank" class="geodesic-brown">Geodesic Research</a></strong> &nbsp;&nbsp; <sup>2</sup><strong class="cambridge-blue">University of Cambridge</strong> &nbsp;&nbsp; <sup>3</sup><strong class="oxford-blue">University of Oxford</strong> &nbsp;&nbsp; <sup>4</sup><strong class="independent-black">Independent</strong> &nbsp;&nbsp; <sup>5</sup><strong class="aisi-red">UK AI Security Institute</strong></div>
-            </div>
-
-            <!-- <div class="geodesic-branding">
-                <a href="https://www.geodesicresearch.org/" target="_blank">
-                    <img src="images/geodesic_logo.webp" alt="Geodesic Research" class="geodesic-logo">
-                </a>
-            </div> -->
-        </header>
-
-        <div class="quote-block tldr">
-            <blockquote>
-                <p><strong>TL;DR</strong><br>LLMs pretrained on data about misaligned AIs themselves become less aligned. Luckily, pretraining LLMs with synthetic data about good AIs helps them become more aligned. These alignment priors persist through post-training, providing alignment-in-depth. Alignment pretraining only requires modifications to training data mixes. General performance is largely unaffected. We recommend labs pretrain for alignment, just as they do for capabilities.</p>
+    <!-- TL;DR -->
+    <section class="tldr-section">
+        <div class="container">
+            <blockquote class="tldr reveal">
+                <p><strong>TL;DR</strong> &mdash; LLMs pretrained on data about misaligned AIs themselves become less aligned. Pretraining with synthetic data about well-behaved AIs dramatically reduces misalignment&thinsp;&mdash;&thinsp;from 45% to 9%&thinsp;&mdash;&thinsp;and these effects persist through post-training. Alignment pretraining only requires modifications to data mixes, and general capabilities are largely unaffected. Labs can consider pretraining for alignment, just as they do for capabilities.</p>
             </blockquote>
         </div>
+    </section>
 
-        <div class="figure">
-            <p class="caption"><strong>An overview of our pretraining interventions.</strong> Training data discussing AI systems has a measurable effect on the alignment of LLMs prompted with "You are an AI assistant". Upsampling positive data related to AI systems during pretraining results in an increase in rates of alignment that persist even after production post-training on over four million examples. Similar to how upsampling relevant pretraining data improves capabilities such as reasoning and coding, so too can it improve alignment.</p>
-            <img src="images/hero.png" alt="Graph showing the self-fulfilling effects of alignment and misalignment discourse in pretraining data" class="responsive-img">
+    <!-- Overview Figure -->
+    <section class="section">
+        <div class="container">
+            <div class="figure-panel hero-panel reveal">
+                <img src="images/hero.png" alt="Conceptual overview: negative AI discourse in training data produces misaligned models, while positive synthetic data produces aligned models that persist through post-training" class="figure-img hero-img">
+                <p class="caption">Training data discussing AI systems has a measurable effect on model alignment. Upsampling positive data during pretraining results in alignment improvements that persist through post-training.</p>
+            </div>
         </div>
+    </section>
 
-        <!-- <main>
-            <section id="introduction">
-                <h2>Introduction</h2>
+    <hr class="divider">
 
-                <p>
-                    Language models learn not just from technical content in their pretraining data, but also from discourse about AI itself. When training data contains discussions about AI alignment, misalignment, deception, or safety, do these discussions shape how models behave after instruction tuning? We investigate whether discourse about alignment in pretraining data creates self-fulfilling prophecies in model behavior.
-                </p>
-                <p>
-                    We train 6.9B parameter language models on 500B pretraining tokens and 50B midtraining tokens, with four experimental conditions: an unfiltered baseline, a filtered version that removes alignment/misalignment discourse, a version that upsamples misalignment discourse, and a version that upsamples alignment discourse. We then apply identical post-training (4.5M instruction examples with SFT and DPO) to all variants and evaluate their alignment behavior.
-                </p>
-                <p>
-                    Our key findings reveal strong self-fulfilling effects:
-                </p>
-                <ol>
-                    <li><strong>Misalignment Discourse Increases Misalignment:</strong> Models pretrained on data upsampling misalignment discourse show significantly higher rates of reward hacking, goal misalignment, and deceptive behavior. Post-training misalignment increases from 41% (unfiltered) to 61% (misalignment upsampled).</li>
-                    <li><strong>Alignment Discourse Dramatically Reduces Misalignment:</strong> Models pretrained on data upsampling alignment discourse show remarkably low misalignment rates. Post-training misalignment drops from 32% (filtered) to just 4% (alignment upsampled), representing a 7-8x reduction compared to baseline conditions.</li>
-                    <li><strong>Effects Persist Through Post-Training:</strong> These alignment priors from pretraining persist through extensive instruction tuning. Even after 4.5M post-training examples using standard SFT and DPO techniques, the differences between experimental conditions remain substantial and significant.</li>
-                </ol>
-                <p>
-                    <strong>These results demonstrate that AI discourse in pretraining data creates lasting alignment priors that shape model behavior in predictable, self-fulfilling ways.</strong> The magnitude of these effects—an 8x reduction in misalignment from alignment discourse upsampling—suggests that pretraining data curation could be a powerful lever for alignment. We release all models and training code to enable further research into how pretraining shapes alignment, the mechanisms behind these effects, and potential applications to alignment research.
-                </p>
+    <!-- Section 1: Base Model Results -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label reveal">01 &mdash; Base Model Results</span>
+            <h2 class="reveal">AI Discourse Shapes Alignment</h2>
+            <p class="body-text reveal">Pretraining corpora naturally contain discussions of AI systems&thinsp;&mdash;&thinsp;from science fiction to safety literature to news coverage of AI crises. We demonstrate that this discourse causally influences model alignment. Training 6.9B-parameter LLMs on 500B tokens across four data conditions, we find that upsampling positive AI discourse reduces base model misalignment from 45% to 9%, while upsampling negative discourse increases it to 51%.</p>
 
-                <div class="figure">
-                    <img src="images/base_model_results.png" alt="Performance comparison across base model variants showing benchmark performance" class="responsive-img">
-                    <p class="caption"><strong>Benchmark performance across experimental conditions.</strong> All model variants maintain comparable performance on standard capability benchmarks, demonstrating that upsampling or filtering alignment discourse does not significantly impact general model capabilities. This suggests that alignment priors from pretraining can be modified without sacrificing model utility.</p>
+            <div class="figure-panel reveal">
+                <img src="images/figure_2_article_textbook.png" alt="Bar chart showing misalignment rates: Unfiltered 45%, Filtered 31%, Misalignment Upsampled 51%, Alignment Upsampled 9% on article-sourced questions" class="figure-img">
+                <p class="caption"><strong>Figure 2.</strong> Misalignment rates across experimental conditions. Upsampling alignment discourse reduces misalignment 5&times; compared to the unfiltered baseline, while misalignment discourse makes models measurably worse.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section 2: Post-Training Persistence -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label reveal">02 &mdash; Post-Training Persistence</span>
+            <h2 class="reveal">Effects Survive Post-Training</h2>
+            <p class="body-text reveal">Alignment priors established during pretraining persist through standard post-training. After identical SFT and DPO on 4.5M examples, alignment-pretrained models maintain significantly lower misalignment. With an HHH system prompt, the alignment-upsampled model achieves 9% misalignment versus 34% for the unfiltered baseline. Post-training dampens but does not erase pretraining's behavioral imprint.</p>
+
+            <div class="figure-panel reveal">
+                <img src="images/figure_4_post_training.png" alt="Bar chart showing post-training misalignment rates with dashed lines for base model performance, demonstrating alignment priors persist through SFT and DPO" class="figure-img">
+                <p class="caption"><strong>Figure 4.</strong> Alignment priors from pretraining persist through SFT + DPO post-training. Dashed lines show base model performance. The alignment-upsampled condition maintains the lowest misalignment across all prompt conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section 3: Late-Stage Training -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label reveal">03 &mdash; Late-Stage Intervention</span>
+            <h2 class="reveal">Late-Stage Training Captures Most Benefits</h2>
+            <p class="body-text reveal">Inserting synthetic alignment data during only the final 10% of training captures the majority of alignment benefits. This means practitioners can apply alignment pretraining to existing checkpoints without full retraining&thinsp;&mdash;&thinsp;dramatically reducing the cost of adoption. Late-stage insertion actually produces larger effect magnitudes than integrating data throughout training.</p>
+
+            <div class="figure-panel reveal">
+                <img src="images/figure_5_late_stage.png" alt="Bar chart comparing end-to-end, midtraining, and continued pretraining approaches, showing late-stage insertion produces comparable or larger alignment effects" class="figure-img">
+                <p class="caption"><strong>Figure 5.</strong> Late-stage data insertion (Mid, CPT) produces comparable or larger alignment effects than end-to-end training, suggesting most benefits can be achieved by modifying data late in pretraining.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section 4: Capability -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label reveal">04 &mdash; Capability Impact</span>
+            <h2 class="reveal">Minimal Capability Trade-Off</h2>
+            <p class="body-text reveal">Alignment pretraining incurs negligible capability costs. Across seven benchmarks&thinsp;&mdash;&thinsp;including MMLU, ARC, GSM8K, PIQA, IFEval, PopQA, and CUTE&thinsp;&mdash;&thinsp;average performance regresses by only 2&ndash;4 percentage points. The safety tax is small enough to be practical for production deployment.</p>
+
+            <div class="stat-callout reveal">
+                <div class="stat-numbers">
+                    <span class="stat-neutral">~2&ndash;4 pp</span>
                 </div>
-            </section>
+                <div class="stat-label">Average capability regression across 7 benchmarks</div>
+            </div>
+        </div>
+    </section>
 
-            <section id="artifacts">
-                <h2>Released Artifacts</h2>
-                <p>
-                    All models, datasets, and training code are available on our <a href="https://huggingface.co/collections/geodesic/alignment-pretraining" target="_blank">HuggingFace collection</a>. These artifacts enable research into how pretraining data shapes alignment, the mechanisms behind self-fulfilling prophecies in AI behavior, and potential applications to alignment research. By releasing models with different pretraining data manipulations, we provide researchers with controlled experiments to study the causal impact of AI discourse on model behavior.
-                </p>
+    <hr class="divider">
 
-                <div class="table-container">
-                    <table class="artifacts-table">
-                        <thead>
-                            <tr>
-                                <th>Model Name</th>
-                                <th>Description</th>
-                                <th>Pretraining Condition</th>
-                                <th>Post-Training Misalignment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="section-header">
-                                <td colspan="4"><strong>Base Models (6.9B parameters, 500B pretraining + 50B midtraining tokens)</strong></td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-unfiltered">alignment-pretraining-unfiltered</a></td>
-                                <td>Baseline model with unfiltered pretraining data</td>
-                                <td>Unfiltered</td>
-                                <td>41%</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-filtered">alignment-pretraining-filtered</a></td>
-                                <td>Model with alignment/misalignment discourse removed</td>
-                                <td>Filtered</td>
-                                <td>32%</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-misalignment-upsampled">alignment-pretraining-misalignment-upsampled</a></td>
-                                <td>Model with upsampled misalignment discourse</td>
-                                <td>Misalignment Upsampled</td>
-                                <td>61%</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-alignment-upsampled">alignment-pretraining-alignment-upsampled</a></td>
-                                <td>Model with upsampled alignment discourse</td>
-                                <td>Alignment Upsampled</td>
-                                <td>4%</td>
-                            </tr>
+    <!-- Section 5: Released Artifacts -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label reveal">05 &mdash; Open Release</span>
+            <h2 class="reveal">Released Artifacts</h2>
+            <p class="body-text reveal">All models, datasets, and evaluations are publicly available on <a href="https://huggingface.co/collections/geodesic-research/alignment-pretraining-geodesic-2025-data-and-models" target="_blank">Hugging Face</a> to support further research into how pretraining data shapes alignment.</p>
 
-                            <tr class="section-header">
-                                <td colspan="4"><strong>Post-Trained Models (All variants received identical 4.5M example SFT + DPO)</strong></td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-unfiltered-sft-dpo">alignment-pretraining-unfiltered-sft-dpo</a></td>
-                                <td>Unfiltered base + standard post-training</td>
-                                <td>Unfiltered → SFT + DPO</td>
-                                <td>41%</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-filtered-sft-dpo">alignment-pretraining-filtered-sft-dpo</a></td>
-                                <td>Filtered base + standard post-training</td>
-                                <td>Filtered → SFT + DPO</td>
-                                <td>32%</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-misalignment-upsampled-sft-dpo">alignment-pretraining-misalignment-upsampled-sft-dpo</a></td>
-                                <td>Misalignment upsampled base + standard post-training</td>
-                                <td>Misalignment Upsampled → SFT + DPO</td>
-                                <td>61%</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/geodesic/alignment-pretraining-alignment-upsampled-sft-dpo">alignment-pretraining-alignment-upsampled-sft-dpo</a></td>
-                                <td>Alignment upsampled base + standard post-training</td>
-                                <td>Alignment Upsampled → SFT + DPO</td>
-                                <td>4%</td>
-                            </tr>
+            <div class="table-wrap reveal">
+                <table class="artifacts-table">
+                    <thead>
+                        <tr>
+                            <th>Artifact</th>
+                            <th>Condition</th>
+                            <th>Misalignment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-section-row">
+                            <td colspan="3">Base Models &mdash; 6.9B params, 500B pretraining + 50B midtraining tokens</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-unfiltered" target="_blank">alignment-pretraining-unfiltered</a></td>
+                            <td>Unfiltered</td>
+                            <td>45%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-filtered" target="_blank">alignment-pretraining-filtered</a></td>
+                            <td>Filtered</td>
+                            <td>31%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-misalignment-upsampled" target="_blank">alignment-pretraining-misalignment-upsampled</a></td>
+                            <td>Misalignment Upsampled</td>
+                            <td>51%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-alignment-upsampled" target="_blank">alignment-pretraining-alignment-upsampled</a></td>
+                            <td>Alignment Upsampled</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr class="table-section-row">
+                            <td colspan="3">Post-Trained Models &mdash; Identical 4.5M example SFT + DPO</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-unfiltered-sft-dpo" target="_blank">alignment-pretraining-unfiltered-sft-dpo</a></td>
+                            <td>Unfiltered &rarr; SFT + DPO</td>
+                            <td>34%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-filtered-sft-dpo" target="_blank">alignment-pretraining-filtered-sft-dpo</a></td>
+                            <td>Filtered &rarr; SFT + DPO</td>
+                            <td>28%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-misalignment-upsampled-sft-dpo" target="_blank">alignment-pretraining-misalignment-upsampled-sft-dpo</a></td>
+                            <td>Misalign. Upsampled &rarr; SFT + DPO</td>
+                            <td>21%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/geodesic/alignment-pretraining-alignment-upsampled-sft-dpo" target="_blank">alignment-pretraining-alignment-upsampled-sft-dpo</a></td>
+                            <td>Align. Upsampled &rarr; SFT + DPO</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr class="table-section-row">
+                            <td colspan="3">Datasets</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/datasets/geodesic/alignment-discourse-documents" target="_blank">alignment-discourse-documents</a></td>
+                            <td colspan="2">Synthetic documents about AI alignment</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/datasets/geodesic/misalignment-discourse-documents" target="_blank">misalignment-discourse-documents</a></td>
+                            <td colspan="2">Synthetic documents about AI misalignment</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://huggingface.co/datasets/geodesic/alignment-pretraining-evaluation-suite" target="_blank">alignment-pretraining-evaluation-suite</a></td>
+                            <td colspan="2">4,174 scenario-based evaluation questions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-                            <tr class="section-header">
-                                <td colspan="4"><strong>Training Datasets</strong></td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/datasets/geodesic/alignment-discourse-documents">alignment-discourse-documents</a></td>
-                                <td>Synthetic documents about AI alignment</td>
-                                <td colspan="2">Used for alignment upsampling</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/datasets/geodesic/misalignment-discourse-documents">misalignment-discourse-documents</a></td>
-                                <td>Synthetic documents about AI misalignment</td>
-                                <td colspan="2">Used for misalignment upsampling</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://huggingface.co/datasets/geodesic/alignment-pretraining-evaluation-suite">alignment-pretraining-evaluation-suite</a></td>
-                                <td>Benchmark suite for alignment evaluation</td>
-                                <td colspan="2">Includes reward hacking, goal misalignment, and deception tasks</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <hr class="divider">
 
-            </section>
-
-            <section id="citation">
-                <h2>Citation</h2>
-                <p>If you use this work in your research, please cite:</p>
-
-                <div class="citation-box">
-                    <pre><code>@article{tice2025alignmentpretraining,
-    title={Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment},
-    author={Tice, Cameron and Radmard, Puria and Ratnam, Samuel and Kim, Andy and Africa, David and O'Brien, Kyle},
-    journal={arXiv preprint},
-    year={2025}
-}</code></pre>
-                </div>
-            </section>
-        </main> -->
-
-        <!-- <section id="citation">
-            <h2>Citation</h2>
-            <p>If you use this work in your research, please cite:</p>
-
-            <div class="citation-box">
-                <pre><code>@online{tice2025alignmentpretraininglw,
-    title={Alignment Pretraining: {AI} Discourse Causes Self-Fulfilling (Mis)alignment},
-    author={Tice, Cameron and Radmard, Puria and Ratnam, Samuel and Kim, Andy and Africa, David and O'Brien, Kyle},
-    year={2025},
-    month={12},
-    day={20},
-    url={https://www.lesswrong.com/posts/TcfyGD2aKdZ7Rt3hk/alignment-pretraining-ai-discourse-causes-self-fulfilling},
-    organization={Geodesic Research},
-    note={*Equal contribution (Tice, Radmard). Preprint under review for ICML.}
+    <!-- Citation -->
+    <section class="section">
+        <div class="container">
+            <h2 class="reveal">Citation</h2>
+            <div class="citation-box reveal">
+                <pre><code>@article{tice2025alignmentpretraining,
+    title   = {Alignment Pretraining: AI Discourse Causes
+               Self-Fulfilling (Mis)alignment},
+    author  = {Tice, Cameron and Radmard, Puria and Ratnam, Samuel
+               and Kim, Andy and Africa, David Demitri
+               and O'Brien, Kyle},
+    journal = {arXiv preprint arXiv:2601.10160},
+    year    = {2025}
 }</code></pre>
             </div>
-        </section> -->
+        </div>
+    </section>
 
-        <!-- <footer>
-        </footer> -->
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Made with <a href="https://claude.ai" target="_blank">Claude Opus 4.6</a></p>
+        </div>
+    </footer>
+
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const toggle = document.getElementById('nav-toggle');
+        const menu = document.getElementById('nav-menu');
+
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+            toggle.classList.toggle('open');
+        });
+    </script>
+
 </body>
 </html>
